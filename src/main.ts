@@ -8,7 +8,7 @@ window.onload = () => {
     language: 'plaintext',
     theme: 'vs', // 默认亮色主题
     fontSize: 20,
-    wordWrap: 'off',
+    wordWrap: 'on',
     automaticLayout: true, // 自动适应容器大小
     fontFamily: '"JetBrains Mono","HarmonyOS Sans SC","Cascadia Code","Consolas","Menlo","Twemoji Mozilla","monospace"',
     minimap: {
@@ -179,7 +179,7 @@ function updateUrlParams(
     params.set('fontSize', currentOptions.get(monaco.editor.EditorOption.fontSize).toString())
     
     // 添加可选参数
-    const defaultWordWrap = 'off'
+    const defaultWordWrap = 'on'
     if (currentOptions.get(monaco.editor.EditorOption.wordWrap) !== defaultWordWrap) {
       params.set('wordWrap', currentOptions.get(monaco.editor.EditorOption.wordWrap).toString())
     }
