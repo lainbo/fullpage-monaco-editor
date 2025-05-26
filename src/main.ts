@@ -14,7 +14,7 @@ window.onload = () => {
     minimap: {
       enabled: true
     },
-    scrollBeyondLastLine: false
+    scrollBeyondLastLine: true
   }
 
   // 定义差异编辑器特有的配置
